@@ -1,0 +1,11 @@
+
+version: "3.8"
+services:
+  tomcat2.2:
+    image: tomcat:9.0 
+    ports:
+      - 8086:8081
+    volumes:
+      - /var/snap/docker/common/var-lib-docker/volumes/demoVolume/_data:/home/
+
+
